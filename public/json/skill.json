@@ -1,0 +1,84 @@
+{
+  "skill": [
+    {
+      "lang": "HTML5",
+      "img": "../images/html.png",
+      "percentage": "95"
+    },
+    {
+      "lang": "CSS3",
+      "img": "../images/css.png",
+      "percentage": "95"
+    },
+    {
+      "lang": "SASS",
+      "img": "../images/sass.png",
+      "percentage": "90"
+    },
+    {
+      "lang": "JavaScript",
+      "img": "../images/js.png",
+      "percentage": "90"
+    },
+    {
+      "lang": "Git",
+      "img": "../images/git.png",
+      "percentage": "90"
+    },
+    {
+      "lang": "TypeScript",
+      "img": "../images/ts.png",
+      "percentage": "85"
+    },
+    {
+      "lang": "Vue.js",
+      "img": "../images/vue.png",
+      "percentage": "80"
+    },
+    {
+      "lang": "Photoshop",
+      "img": "../images/ps.png",
+      "percentage": "80"
+    },
+    {
+      "lang": "Adobe XD",
+      "img": "../images/xd.png",
+      "percentage": "80"
+    },
+    {
+      "lang": "WordPress",
+      "img": "../images/wordpress.png",
+      "percentage": "80"
+    },
+    {
+      "lang": "Illustrator",
+      "img": "../images/ai.png",
+      "percentage": "75"
+    },
+    {
+      "lang": "PHP",
+      "img": "../images/php.png",
+      "percentage": "75"
+    },
+    {
+      "lang": "Docker",
+      "img": "../images/docker.png",
+      "percentage": "70"
+    },
+    {
+      "lang": "Laravel",
+      "img": "../images/laravel.png",
+      "percentage": "70"
+    },
+    {
+      "lang": "Linux",
+      "img": "../images/linux.png",
+      "percentage": "70"
+    },
+    {
+      "lang": "MySQL",
+      "img": "../images/mysql.png",
+      "percentage": "65"
+    }
+  ]
+}

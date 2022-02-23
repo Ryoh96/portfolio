@@ -1,0 +1,84 @@
+{
+  "skill": [
+    {
+      "lang": "HTML5",
+      "img": "../assets/images/html.png",
+      "percentage": "95"
+    },
+    {
+      "lang": "CSS3",
+      "img": "../assets/images/css.png",
+      "percentage": "95"
+    },
+    {
+      "lang": "SASS",
+      "img": "../assets/images/sass.png",
+      "percentage": "90"
+    },
+    {
+      "lang": "JavaScript",
+      "img": "../assets/images/js.png",
+      "percentage": "90"
+    },
+    {
+      "lang": "Git",
+      "img": "../assets/images/git.png",
+      "percentage": "90"
+    },
+    {
+      "lang": "TypeScript",
+      "img": "../assets/images/ts.png",
+      "percentage": "85"
+    },
+    {
+      "lang": "Vue.js",
+      "img": "../assets/images/vue.png",
+      "percentage": "80"
+    },
+    {
+      "lang": "Photoshop",
+      "img": "../assets/images/ps.png",
+      "percentage": "80"
+    },
+    {
+      "lang": "Adobe XD",
+      "img": "../assets/images/xd.png",
+      "percentage": "80"
+    },
+    {
+      "lang": "WordPress",
+      "img": "../assets/images/wordpress.png",
+      "percentage": "80"
+    },
+    {
+      "lang": "Illustrator",
+      "img": "../assets/images/ai.png",
+      "percentage": "75"
+    },
+    {
+      "lang": "PHP",
+      "img": "../assets/images/php.png",
+      "percentage": "75"
+    },
+    {
+      "lang": "Docker",
+      "img": "../assets/images/docker.png",
+      "percentage": "70"
+    },
+    {
+      "lang": "Laravel",
+      "img": "../assets/images/laravel.png",
+      "percentage": "70"
+    },
+    {
+      "lang": "Linux",
+      "img": "../assets/images/linux.png",
+      "percentage": "70"
+    },
+    {
+      "lang": "MySQL",
+      "img": "../assets/images/mysql.png",
+      "percentage": "65"
+    }
+  ]
+}

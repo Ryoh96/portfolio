@@ -1,0 +1,83 @@
+@use "functions" as f;
+@use "variables" as v;
+@use "sass:map";
+@use "sass:math";
+
+@mixin wrapper {
+  width: f.min(v.$content-width, v.$max-content-width);
+  margin: auto;
+}
+
+@mixin mq($type) {
+  @media #{map.get(v.$breakpoints, $type)} {
+    @content;
+  }
+}
+
+@mixin hue-rotate($brightness: 3, $duration: 30) 
+{
+  // transform: translateZ(0);
+  will-change: filter;
+  $sepia: 120%;
+  $saturate: 800%;
+  filter: sepia($sepia) saturate($saturate) brightness($brightness);
+  
+  $index: $brightness * 100;
+  animation: hue-rotate#{$index} #{$duration}s infinite;
+  @keyframes hue-rotate#{$index} {
+    0% {
+      filter:sepia($sepia) saturate($saturate) brightness($brightness)  hue-rotate(0deg);
+    }
+  
+    50% {
+      filter:sepia($sepia) saturate($saturate) brightness($brightness)  hue-rotate(180deg)
+    }
+  
+    100% {
+      filter:sepia($sepia) saturate($saturate) brightness($brightness)  hue-rotate(360deg)
+    }
+  }
+}
+
+@mixin lowerPageTemplate {
+  &-ttl {
+    font-family: v.$en;
+    font-size: clamp(71.7px,9.33vw,140px);
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+
+    @include mq(u-xs) {
+      font-size: 60px;
+    } 
+  }
+
+  &-desc {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: clamp(23px,3vw, 45px);
+    min-height: 0vw;
+    margin-bottom: 2.5em;
+    text-align: center;
+
+    @include mq(u-xs) {
+      font-size: 18px;
+    }
+  }
+
+  &-inner {
+    @include wrapper;
+    padding-bottom: 10vw;
+    max-width: 1260px;
+    @include mq(u-xl) {
+      width: 72%;;
+    }
+  }
+}
+
+@mixin hoverGear {
+  transition: 0.4s;
+  &:hover {
+    transform: scale(1.2) rotate(360deg);
+  }
+}

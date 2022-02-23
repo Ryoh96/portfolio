@@ -1,0 +1,44 @@
+@use "sass:map";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Prata&display=swap" );
+
+$page-ttl: clamp(80px,10.76vw,140px);
+$en: 'Prata';
+$ja:  'Noto Serif JP', "游明朝体", 'Yu Mincho', 'YuMincho', serif;
+
+$content-width: 94%;
+$max-content-width: 1900px;
+
+$size: (
+  xxs: 400px,
+  xs: 480px,
+  sm: 580px,
+  sp: 835px,
+  md: 900px,
+  pc: 1024px,
+  lg: 1100px,
+  xl: 1300px,
+  x1400: 1400px,
+  x1600: 1600px,
+  xxl: $max-content-width//1900px
+);
+
+$breakpoints: (
+  u-xxs: "(max-width: #{map.get($size, xxs)})",
+  u-xs: "(max-width: #{map.get($size, xs)})",
+  o-xs: "(min-width: #{map.get($size, xs)+1})",
+  u-sm: "(max-width: #{map.get($size, sm)})",
+  u-sp: "(max-width: #{map.get($size, sp)})",
+  o-sp: "(min-width: #{map.get($size, sp)+1})",
+  u-md: "(max-width: #{map.get($size, md)})",
+  u-pc: "(max-width: #{map.get($size, pc)})",
+  u-lg: "(max-width: #{map.get($size, lg)})",
+  u-xl: "(max-width: #{map.get($size, xl)})",
+  o-xl: "(min-width: #{map.get($size, xl)+1})",
+  u-x1400: "(max-width: #{map.get($size, x1400)})",
+  o-x1400: "(min-width: #{map.get($size, x1400)})",
+  u-x1600: "(max-width: #{map.get($size, x1600)})",
+  o-x1600: "(min-width: #{map.get($size, x1600)})",
+  u-xxl: "(max-width: #{map.get($size, xxl)})",
+  o-xxl: "(min-width: #{map.get($size, xxl)+1})",
+  o-max-content-width: '(min-width: #{$max-content-width})'
+ );
